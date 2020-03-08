@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Converter</title>
+</head>
+<body>
+<h1>Конвертер валют</h1>
+<h2>Конвертер работает на основе ежедневно обновляемых официальных данных о курсах Нацбанка РБ.</h2>
+<p>Конвертер позволяет быстро перевести белоруские рубли BYN в одну из других популярных валют в РБ (USD, EUR, RUB).</p>
+<input autocomplete="off" type="text" value="1" id="input">
+<span>BYN to </span>
+<select id="select">
+    <option data-cur-id="145" selected class="option">USD</option>
+    <option data-cur-id="292" class="option">EUR</option>
+    <option data-cur-id="298" class="option">RUB</option>
+</select>
+<button id="button">convert</button>
+<p id="answer"></p>
+<script src="script.js"></script>
+</body>
+</html>
