@@ -28,7 +28,7 @@ function getCurRate(id, rus = 1) {
                 alert(`Введите желаемую сумму в белорусских рублях`);
             } else {
                 let date = new Date(result.Date);
-                answer.innerText = `Вы можете купить ${(input.value * result.Cur_OfficialRate / rus).toFixed(2)} ${result.Cur_Name} за ${input.value} BYN -- ${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}.`;
+                answer.innerText = `Вы можете купить ${(input.value / result.Cur_OfficialRate * rus).toFixed(2)} ${result.Cur_Name} за ${input.value} BYN -- ${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}.`;
             }
         })
 }
