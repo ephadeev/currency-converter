@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 var input = document.getElementById(`input`);
 var button = document.getElementById(`button`);
 var answer = document.getElementById(`answer`);
@@ -18,7 +18,7 @@ button.addEventListener(`click`, function () {
 });
 
 function getCurRate(id, rus = 1) {
-    fetch(`http://www.nbrb.by/API/ExRates/Rates/${id}`)
+    fetch(`https://www.nbrb.by/API/ExRates/Rates/${id}`)
         .then(function (response) {
             return response.json();
         })
