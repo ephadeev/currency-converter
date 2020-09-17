@@ -23,7 +23,6 @@ function getCurRate(id, rus = 1) {
             return response.json();
         })
         .then(function (result) {
-            console.log(result);
             if (input.value === ``) {
                 alert(`Введите желаемую сумму в белорусских рублях`);
             } else {
